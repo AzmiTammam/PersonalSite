@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+ body {
+    font-family: 'Roboto Mono', monospace;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(224, 224, 224);
+    direction: ltr;
+    
+}
+
+.container {
+    width: 94%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: rgb(24, 25, 27);
+    color: whitesmoke;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: rgb(128, 1, 1) 4px solid;
+}
+header a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 16px;
+}
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 25px;
+}
+header #branding {
+    float: left;
+}
+#login {
+    float: right;
+}
+header #branding h1{
+    margin: 0;
+}
+header nav{
+    float: left;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+header a:hover{
+    color: rgb(102, 102, 102);
+    font-weight: bold;
+}
+#showcase{
+    min-height: 400px;
+    background:url('../img/image.jpg') no-repeat center;
+    background-size: cover;
+    text-align: center;
+    color: whitesmoke;
+}
+
+#showcase h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+#showcase p{
+    font-size: 20px;
+}
+#newsletter{
+    padding: 15px;
+    color: whitesmoke;
+    background: rgb(24, 25, 27);
+}
+#newsletter h1{
+    float: left;
+}  
+#newsletter form{
+    float: left;
+    margin-top: 17px;
+    margin-left: 25px;
+}
+#newsletter input[type="email"]{
+    padding: 5px;
+    height: 25px;
+    width: 250px;
+    transition: all 0.3s;
+    color: #cccccc;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: rgb(128, 1, 1) 1px solid;
+}
+#newsletter input[placeholder="@email.com"]{
+    font-size: 13px;
+    font-weight: bold;
+}
+.submetemail{
+    height: 34px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: rgba(29, 28, 28, 0);
+    border: none;
+    color: whitesmoke;
+    border-bottom: rgb(128, 1, 1) 1px solid;
+}
+
+#boxes{
+    margin-top: 20px;
+}
+#boxes .box
+{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+footer{
+    padding: 50px 50px;
+    margin: 0 0 0 0;
+    text-align: center;
+    background-color: rgb(24, 25, 27);
+    color: whitesmoke;
+    border-top: rgb(128, 1, 1) 3px solid;
+}
+#copyright{
+    text-align: center;
+    padding-top: 15px;
+    font-size: 16px;
+    color: #b9b9b9;
+}
+@media(max-width: 768px)
+{
+    header #branding,
+    header #login,
+    header nav,
+    #showcase form,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box
+    {
+        float: none;        
+        text-align: center;
+        width: 100%;
+    }    
+    
+    header
+    {
+        padding-bottom: 20px;     
+    }
+
+    #showcase h1
+    {
+        margin-top: 40px;
+    }     
+
+    #newsletter button 
+    {
+        display: block;
+        width: 100%;        
+    }
+
+    #newsletter form input[type="email"] 
+    {
+        width: 100%;
+        margin-bottom: 5px;
+    }      
+}
+#showcase1{
+    text-align: center;
+    color: rgb(24, 25, 27);
+}
+#showcase1 h1 {
+    margin-top: 50px;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+#showcase2{
+    min-height: 400px;
+    background-color: rgb(24, 25, 27);
+    background-size: cover;
+    color: rgb(24, 25, 27);  
+}
+
+#showcase2 h1 {
+    margin-top: 100px;
+    font-size: 35px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-left: 120px;
+    color: rgb(255, 255, 255);
+}
+
+.container2 {
+    margin: auto;
+    overflow: hidden;
+}
+
+.form{
+    width:1100px;
+    height:320px;
+    background:rgba(24, 25, 27, 0);
+    border-radius: 10px;
+    box-shadow:0 0 40px -10px #000;
+    margin:calc(50vh - 200px) auto;
+    background-size: cover;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 0px;
+    margin-bottom: 60px;
+}
+#name input[type="name"]{
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 40px;
+    height: 25px;
+    width: 250px;
+    transition: all 0.3s;
+    color: #cccccc;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: rgb(128, 1, 1) 1px solid;
+}
+#password input[type="password"]{
+    padding: 10px;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 40px;
+    height: 25px;
+    width: 250px;
+    transition: all 0.3s;
+    display: block;
+    color: #cccccc;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: rgb(128, 1, 1) 1px solid;
+}
+#password h6 {
+    margin-top: 10px;
+    font-size: 10px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-left: 40px;
+    color: rgb(255, 255, 255);
+}
+.submitlogin{
+    height: 35px;
+    margin-top: 30px;
+    margin-left: 130px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: rgba(29, 28, 28, 0);
+    border: none;
+    cursor: pointer;
+    display: block;
+    color: whitesmoke;
+    border: rgb(128, 1, 1) 1px solid;
+}
+.forgotpassword {
+    margin: 0;
+    position: relative;
+    top: 25px;
+    left: 110px;
+    font-size: 12px;
+    border:none;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+#showcase2 h3 {
+    font-size: 0px;
+    color: rgb(255, 255, 255);
+    margin-left: 400px;
+    margin-top: -210px;
+    padding: 100px;
+    display: block;
+    padding-left: 0px;
+    border-left: rgb(128, 1, 1) 1px solid;
+}
+#showcase2 h5 {
+    font-size: 35px;
+    color: rgb(224, 224, 224);
+    margin: 0;
+    margin-left: 700px;
+    margin-top: -240px;
+    border: 0;
+}
+.faq1{
+    position: absolute;
+    top: 50%;
+    left: 640px;
+    transform: translate(-50%,-50%);
+    color: whitesmoke;
+    text-decoration: none;
+}
+.faq2{
+    position: absolute;
+    top: 57%;
+    left: 801px;
+    transform: translate(-50%,-50%);
+    color: whitesmoke;
+    text-decoration: none;
+}
+.faq3{
+    position: absolute;
+    top: 64%;
+    left: 746px;
+    transform: translate(-50%,-50%);
+    color: whitesmoke;
+    text-decoration: none;
+}
+.faq4{
+    position: absolute;
+    top: 70%;
+    left: 730px;
+    transform: translate(-50%,-50%);
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+
+
